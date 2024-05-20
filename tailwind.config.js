@@ -17,6 +17,7 @@ module.exports = {
       reverse: '#fff',
       purple: '#ACACEF',
       borderColor: '#202029',
+      transparent: 'transparent',
     },
   },
 
