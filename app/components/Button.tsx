@@ -1,10 +1,17 @@
-const Button = () => {
+interface ButtonProps {
+  type: 'submit' | 'reset' | 'button' | undefined
+  disabled: boolean
+  text: string
+}
+
+const Button = ({ type, disabled, text }: ButtonProps) => {
   return (
     <button
       className="bg-borderColor px-4 py-2 uppercase text-purple"
-      type="submit"
+      type={type}
+      disabled={disabled}
     >
-      SUBMIT
+      {text}
     </button>
   )
 }
