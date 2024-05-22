@@ -14,9 +14,9 @@ function AddTermForm() {
     <div className="boder-solid mr-6 border px-[10px] pb-6 pt-[10px]">
       <div className="mb-4 grid grid-cols-3 items-center gap-2">
         <FiveBars />
-        <Paragraph className="text-center">
+        <p className="font-andale text-center text-sm font-normal leading-[19.6px] text-borderColor">
           Add new terms & conditions
-        </Paragraph>
+        </p>
         <FiveBars />
       </div>
       <Icon type="christmas" />
@@ -30,38 +30,40 @@ function AddTermForm() {
       >
         {({ values, handleChange, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
-            <Paragraph>what’s your term?</Paragraph>
-            <Paragraph>
+            <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
+              what’s your term?
+            </p>
+            <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               What words do we currently use to relate to community, technology,
               and nature? What words do we ignore?
-            </Paragraph>
+            </p>
             <input
               type="text"
               name="term"
               onChange={handleChange}
               value={values.term}
-              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
+              className="font-andale mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
             />
-            <Paragraph className="mt-6">
+            <p className="font-andale mt-6 text-sm font-normal leading-[19.6px] text-borderColor">
               Describe the conditions for this term. In what new ways do we need
               to reimagine your term?
-            </Paragraph>
+            </p>
             <input
               type="textarea"
               name="condition"
               onChange={handleChange}
               value={values.condition}
-              className="mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2"
+              className="font-andale mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2"
             />
-            <Paragraph className="mt-6">
+            <p className="font-andale mt-6 text-sm font-normal leading-[19.6px] text-borderColor">
               contributor name How would you like to be referred to?
-            </Paragraph>
+            </p>
             <input
               type="text"
               name="contributor"
               onChange={handleChange}
               value={values.contributor}
-              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
+              className="font-andale mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
             />
 
             <div className="mt-6">

@@ -27,14 +27,20 @@ const Term = ({ term }: TermProps) => {
   const { condition, contributor, created_at } = term
   return (
     <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor py-[20px]">
-      <Paragraph>{term.term}</Paragraph>
+      <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
+        {term.term}
+      </p>
       <div className="col-span-2 max-w-[332px]">
-        <Paragraph>{condition}</Paragraph>
+        <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
+          {condition}
+        </p>
       </div>
-      <Paragraph>{contributor}</Paragraph>
-      <Paragraph className="text-right">
+      <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
+        {contributor}
+      </p>
+      <p className="font-andale text-right text-xs font-normal leading-[13.5px] text-ink">
         {convertDateFormat(created_at)}
-      </Paragraph>
+      </p>
     </div>
   )
 }

@@ -9,22 +9,19 @@ const Subscribe = () => {
       </h2>
 
       <div className="w-full">
-        <form
-          action=""
-          className="borer-solid flex justify-between border border-borderColor bg-transparent p-3"
-        >
+        <form className="borer-solid flex justify-between border border-borderColor bg-transparent p-3">
           <input
             type="email"
             name="email"
             id="email"
-            className="w-full border-none bg-transparent text-ink placeholder:text-ink"
+            className="placeholder:font-andale font-andale w-full border-none bg-transparent text-base font-normal leading-[22.4px] text-borderColor placeholder:text-borderColor"
             placeholder="Your email address"
           />
           <Button type="submit" disabled={false} text="submit"></Button>
         </form>
-        <Paragraph className="mt-4">
+        <p className="font-andale mt-4 text-sm font-normal leading-[16.8px] text-borderColor">
           a bi-weekly glossary entry, manifesto, and poetic utterance
-        </Paragraph>
+        </p>
       </div>
     </div>
   )

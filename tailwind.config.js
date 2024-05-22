@@ -10,6 +10,7 @@ module.exports = {
       ['editorial']: ['var(--font-editorial)'],
       ['mondwest']: ['var(--font-mondwest)'],
       ['montreal']: ['var(--font-montreal)'],
+      ['andale']: ['var(--font-andale)'],
     },
     extend: {
     },

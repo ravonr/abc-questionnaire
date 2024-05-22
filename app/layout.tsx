@@ -1,9 +1,16 @@
 import type { Metadata } from 'next'
 import localFont from '@next/font/local'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const andale = localFont({
+  src: [
+    {
+      path: '../public/fonts/andale-mono.ttf',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-andale',
+})
 
 const editorial = localFont({
   src: [
@@ -48,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} bg-purple p-8`}
+        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable} bg-purple p-8`}
       >
         {children}
       </body>

@@ -7,7 +7,7 @@ interface ButtonProps {
 const Button = ({ type, disabled, text }: ButtonProps) => {
   return (
     <button
-      className="bg-borderColor px-4 py-2 uppercase text-purple"
+      className="font-andale bg-borderColor px-4 py-2 text-base font-normal uppercase leading-[22.4px] text-purple"
       type={type}
       disabled={disabled}
     >
