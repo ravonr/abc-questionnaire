@@ -1,4 +1,3 @@
-import Paragraph from './Paragraph'
 import Icon from './Icon'
 
 const Hero = () => {
@@ -8,21 +7,20 @@ const Hero = () => {
         <Icon className="mr-3" type="pixel"></Icon>
         ABC Glossary Questionnaire
       </h1>
-
-      <Paragraph>
+      <p className="font-montreal text-smfont-normal leading-[18.2px] text-ink">
         Use these exercises to revisit your relationship to the internet and the
         web through language. What words do we use? What words do we ignore?
         What words do we need to use in new ways? Afterwards submit your
         reimagined term and its new definition.
-      </Paragraph>
+      </p>
       <br />
-      <Paragraph>
+      <p className="font-montreal text-sm leading-[18.2px] text-ink ">
         This questionnaire is part of a framework and glossary for an
         anti-colonial Black feminist critical media ecology, or abc glossary for
         short, a growing reimagining of computing-related terminology from
         hardware to software beyond the conditions of e-colonialism — toward
         abundant relationship between humans, technology, and nature.
-      </Paragraph>
+      </p>
     </div>
   )
 }

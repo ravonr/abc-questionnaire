@@ -11,16 +11,16 @@ const Subscribe = () => {
       <div className="w-full">
         <form
           action=""
-          className="borer-solid bg-transparent flex justify-between border border-borderColor p-3"
+          className="borer-solid flex justify-between border border-borderColor bg-transparent p-3"
         >
           <input
             type="email"
             name="email"
             id="email"
-            className="bg-transparent w-full border-none text-ink placeholder:text-ink"
+            className="w-full border-none bg-transparent text-ink placeholder:text-ink"
             placeholder="Your email address"
           />
-          <Button />
+          <Button type="submit" disabled={false} text="submit"></Button>
         </form>
         <Paragraph className="mt-4">
           a bi-weekly glossary entry, manifesto, and poetic utterance

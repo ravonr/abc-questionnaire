@@ -5,8 +5,11 @@ import Paragraph from './Paragraph'
 import Button from './Button'
 import FiveBars from './FiveBars'
 import { Formik } from 'formik'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 function AddTermForm() {
+  const supabase = createClientComponentClient()
+
   return (
     <div className="boder-solid mr-6 border px-[10px] pb-6 pt-[10px]">
       <div className="mb-4 grid grid-cols-3 items-center gap-2">
@@ -19,22 +22,13 @@ function AddTermForm() {
       <Icon type="christmas" />
       <Formik
         initialValues={{ term: '', condition: '', contributor: '' }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2))
-            setSubmitting(false)
-          }, 400)
+        onSubmit={async (values, { setSubmitting }) => {
+          const { error } = await supabase.from('terms').insert(values)
+
+          setSubmitting(false)
         }}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-        }) => (
+        {({ values, handleChange, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
             <Paragraph>what’s your term?</Paragraph>
             <Paragraph>
@@ -46,7 +40,7 @@ function AddTermForm() {
               name="term"
               onChange={handleChange}
               value={values.term}
-              className="bg-transparent mt-4 w-full border border-solid border-borderColor p-2"
+              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
             />
             <Paragraph className="mt-6">
               Describe the conditions for this term. In what new ways do we need
@@ -57,7 +51,7 @@ function AddTermForm() {
               name="condition"
               onChange={handleChange}
               value={values.condition}
-              className="bg-transparent mt-4 min-h-[229px] w-full border border-solid border-borderColor p-2"
+              className="mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2"
             />
             <Paragraph className="mt-6">
               contributor name How would you like to be referred to?
@@ -67,7 +61,7 @@ function AddTermForm() {
               name="contributor"
               onChange={handleChange}
               value={values.contributor}
-              className="bg-transparent mt-4 w-full border border-solid border-borderColor p-2"
+              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
             />
 
             <div className="mt-6">

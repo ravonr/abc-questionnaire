@@ -16,7 +16,7 @@ const DrawTheInternet = () => {
           <button disabled className="uppercase">
             Undo
           </button>
-          <Button></Button>
+          <Button type="submit" disabled={false} text="submit"></Button>
         </div>
       </div>
     </div>

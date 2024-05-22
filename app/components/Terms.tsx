@@ -5,7 +5,7 @@ import Paragraph from './Paragraph'
 import Term from './Term'
 
 const Terms = async () => {
-  cookies().getAll() // Keep cookies in the JS execution context for Next.js build
+  cookies().getAll()
   const supabase = createServerComponentClient({ cookies })
 
   const { data, error } = await supabase.from('terms').select('*')

@@ -9,6 +9,20 @@ interface TermProps {
   }
 }
 
+const convertDateFormat = (dateString: string) => {
+  const date = new Date(dateString)
+  const day = date.getDate()
+  const month = date.getMonth() + 1
+  const year = date.getFullYear()
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const seconds = date.getSeconds()
+
+  const formattedDate = `${month}/${day}/${year} ${hours}:${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`
+
+  return formattedDate
+}
+
 const Term = ({ term }: TermProps) => {
   const { condition, contributor, created_at } = term
   return (
@@ -18,7 +32,9 @@ const Term = ({ term }: TermProps) => {
         <Paragraph>{condition}</Paragraph>
       </div>
       <Paragraph>{contributor}</Paragraph>
-      <Paragraph className="text-right">{created_at}</Paragraph>
+      <Paragraph className="text-right">
+        {convertDateFormat(created_at)}
+      </Paragraph>
     </div>
   )
 }

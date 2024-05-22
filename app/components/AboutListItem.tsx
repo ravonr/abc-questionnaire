@@ -12,7 +12,7 @@ const AboutListItem = ({ icon, text }: AboutListItemProps) => {
       <div className="mr-6">
         <Icon type={icon}></Icon>
       </div>
-      <Paragraph>{text}</Paragraph>
+      <p className="font-montreal text-sm font-normal text-ink">{text}</p>
     </li>
   )
 }

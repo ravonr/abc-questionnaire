@@ -4,7 +4,11 @@ interface ParagraphProps {
 }
 
 const Paragraph = ({ children, className }: ParagraphProps) => {
-  return <p className={`${className} text-ink`}>{children}</p>
+  return (
+    <p className={`${className?.length ? className : ''} text-ink`}>
+      {children}
+    </p>
+  )
 }
 
 export default Paragraph

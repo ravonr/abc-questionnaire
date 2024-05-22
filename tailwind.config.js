@@ -7,8 +7,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      ['lack']: ['var(--font-lack)'],
-      ['baroque']: ['var(--font-baroque)'],
+      ['editorial']: ['var(--font-editorial)'],
+      ['mondwest']: ['var(--font-mondwest)'],
+      ['montreal']: ['var(--font-montreal)'],
     },
     extend: {
     },
