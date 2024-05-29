@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable} bg-purple p-8`}
+        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable} `}
       >
         {children}
       </body>
