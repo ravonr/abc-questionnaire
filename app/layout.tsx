@@ -53,9 +53,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-purple">
       <body
-        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable} `}
+        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable}`}
       >
         {children}
       </body>

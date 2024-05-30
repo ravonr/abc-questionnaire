@@ -1,24 +1,23 @@
 import Button from './Button'
-import Paragraph from './Paragraph'
 
 const Subscribe = () => {
   return (
-    <div className="flex flex-col border border-l-0 border-r-0 border-solid border-borderColor px-[10px] py-[12px] lg:flex-row lg:px-8 lg:pb-6 lg:pt-6">
-      <h2 className="mb-2 max-w-[70px] leading-none lg:mb-2 lg:mr-[41px] lg:max-w-[210px]">
-        <span className="font-mondwest text-[12px] lg:text-[34px]">S</span>
-        <span className="font-editorial text-[9px] lg:text-[27px]">ubs</span>
-        <span className="font-mondwest text-[12px] lg:text-[34px]">c</span>
-        <span className="font-editorial text-[9px] lg:text-[27px]">rib</span>
-        <span className="font-mondwest text-[12px] lg:text-[34px]">e</span>{' '}
-        <span className="font-editorial text-[9px] lg:text-[27px]">t</span>
-        <span className="font-mondwest text-[12px] lg:text-[34px]">o</span>{' '}
-        <span className="font-editorial text-[9px] lg:text-[27px]">N</span>
-        <span className="font-mondwest text-[12px] lg:text-[34px]">e</span>
-        <span className="font-mondwest text-[12px] lg:text-[34px]">w</span>{' '}
-        <span className="font-mondwest text-[12px] lg:text-[34px]">
+    <div className="flex flex-col border border-l-0 border-r-0 border-solid border-borderColor bg-purple px-[10px] py-[12px] lg:flex-row lg:px-8 lg:pb-6 lg:pt-6">
+      <h2 className="mb-2 max-w-[120px] leading-none lg:mb-2 lg:mr-[41px] lg:max-w-[210px]">
+        <span className="font-mondwest text-[20px] lg:text-[34px]">S</span>
+        <span className="font-editorial text-[15px] lg:text-[27px]">ubs</span>
+        <span className="font-mondwest text-[20px] lg:text-[34px]">c</span>
+        <span className="font-editorial text-[15px] lg:text-[27px]">rib</span>
+        <span className="font-mondwest text-[20px] lg:text-[34px]">e</span>{' '}
+        <span className="font-editorial text-[15px] lg:text-[27px]">t</span>
+        <span className="font-mondwest text-[20px] lg:text-[34px]">o</span>{' '}
+        <span className="font-editorial text-[15px] lg:text-[27px]">N</span>
+        <span className="font-mondwest text-[20px] lg:text-[34px]">e</span>
+        <span className="font-mondwest text-[20px] lg:text-[34px]">w</span>{' '}
+        <span className="font-mondwest text-[20px] lg:text-[34px]">
           Terms &
         </span>{' '}
-        <span className="font-mondwest text-[12px] lg:text-[34px]">
+        <span className="font-mondwest text-[20px] lg:text-[34px]">
           Conditions
         </span>
       </h2>
@@ -31,7 +30,7 @@ const Subscribe = () => {
           className="embeddable-buttondown-form"
         >
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" placeholder="you@example.com" />
+          <input className="rounded-none" type="email" name="email" placeholder="you@example.com" />
           <input type="hidden" value="1" name="embed" />
           <input type="submit" value="Subscribe" />
         </form> */}
@@ -40,7 +39,7 @@ const Subscribe = () => {
             type="email"
             name="email"
             id="email"
-            className="w-full border-none bg-transparent font-andale text-sm font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor lg:text-base"
+            className="w-full rounded-none border-none bg-transparent font-andale text-sm font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor lg:text-base"
             placeholder="Your email address"
           />
           <Button

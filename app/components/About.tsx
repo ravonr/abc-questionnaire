@@ -3,8 +3,8 @@ import Icon from './Icon'
 
 const About = () => {
   return (
-    <div className="border border-b-0 border-l-0 border-r-0 border-solid border-borderColor py-6 pl-8 pr-6">
-      <h3 className="text-headlineColor text mb-6 max-w-[320px] items-center justify-center leading-none">
+    <div className="border border-b-0 border-l-0 border-r-0 border-solid border-borderColor py-[12px] pl-[10px] pr-[4px] lg:py-6 lg:pl-8 lg:pr-6">
+      <h3 className="text mb-6 max-w-[320px] items-center justify-center leading-none text-headlineColor">
         <span className="font-mondwest text-[14px] lg:text-[48px]">B</span>
         <span className="font-editorial text-[12px] lg:text-[39px]">eg</span>
         <span className="font-mondwest text-[14px] lg:text-[48px]">
@@ -27,7 +27,10 @@ const About = () => {
         <span className="font-mondwest text-[14px] lg:text-[48px]">ep</span>
         <span className="font-editorial text-[12px] lg:text-[39px]">air</span>
         <div className="inline-flex">
-          <Icon type="pixel-heart" className="ml-2"></Icon>
+          <Icon
+            type="pixel-heart"
+            className="ml-2 h-[10px] w-[10px] lg:h-auto lg:w-auto"
+          ></Icon>
         </div>
       </h3>
 

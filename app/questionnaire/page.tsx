@@ -14,7 +14,7 @@ export default function Home() {
         <AddTermForm />
         <DrawTheInternet />
       </div>
-      <div className="max-w-[55%] border border-b-0 border-r-0 border-t-0 border-solid border-borderColor lg:min-w-[66%]">
+      <div className="min-w-[430px] border border-b-0 border-r-0 border-t-0 border-solid border-borderColor bg-purple lg:min-w-[66%]">
         <Subscribe />
         <Terms />
       </div>

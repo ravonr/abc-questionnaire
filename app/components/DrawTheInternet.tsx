@@ -3,7 +3,7 @@ import Button from './Button'
 
 const DrawTheInternet = () => {
   return (
-    <div className="boder-solid ml-8 mr-6 mt-6 border">
+    <div className="boder-solid mx-[10px] mt-4 border lg:ml-8 lg:mr-6 lg:mt-6">
       <div className=" flex justify-center border  border-l-0 border-r-0 border-t-0 border-solid p-[10px]">
         <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
           Draw a map of the internet
@@ -14,9 +14,12 @@ const DrawTheInternet = () => {
           coming soon
         </p>
       </div>
-      <div className="flex justify-between border border-b-0 border-l-0 border-r-0 border-solid p-[20px]">
-        <input type="range" />
-        <div className="flex gap-6">
+      <div className="flex flex-col justify-between border border-b-0 border-l-0 border-r-0 border-solid p-[10px] lg:flex-row lg:p-[20px]">
+        <div>
+          <input type="range" className="rounded-none" />
+          <p className="text-center">brush size</p>
+        </div>
+        <div className="mt-4 flex flex-col gap-4 lg:mt-0 lg:flex-row lg:gap-6">
           <button
             disabled
             className="leading-[22.4px ] font-andale text-base font-normal uppercase text-borderColor"
