@@ -7,7 +7,7 @@ import DrawTheInternet from '../components/DrawTheInternet'
 
 export default function Home() {
   return (
-    <main className="flex bg-purple p-8">
+    <main className="flex bg-purple py-8">
       <div className="max-w-[33%]">
         <Hero />
         <About />

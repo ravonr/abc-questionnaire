@@ -26,7 +26,7 @@ const convertDateFormat = (dateString: string) => {
 const Term = ({ term }: TermProps) => {
   const { condition, contributor, created_at } = term
   return (
-    <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor py-[20px]">
+    <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor px-8 py-[20px]">
       <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
         {term.term}
       </p>
@@ -38,7 +38,7 @@ const Term = ({ term }: TermProps) => {
       <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
         {contributor}
       </p>
-      <p className="font-andale text-right text-xs font-normal leading-[13.5px] text-ink">
+      <p className="text-right font-andale text-xs font-normal leading-[13.5px] text-ink">
         {convertDateFormat(created_at)}
       </p>
     </div>

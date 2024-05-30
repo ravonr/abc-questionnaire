@@ -11,10 +11,10 @@ function AddTermForm() {
   const supabase = createClientComponentClient()
 
   return (
-    <div className="boder-solid mr-6 border px-[10px] pb-6 pt-[10px]">
+    <div className="boder-solid ml-8 mr-6 border px-[10px] pb-6 pt-[10px]">
       <div className="mb-4 grid grid-cols-3 items-center gap-2">
         <FiveBars />
-        <p className="font-andale text-center text-sm font-normal leading-[19.6px] text-borderColor">
+        <p className="text-center font-andale text-sm font-normal leading-[19.6px] text-borderColor">
           Add new terms & conditions
         </p>
         <FiveBars />
@@ -42,9 +42,9 @@ function AddTermForm() {
               name="term"
               onChange={handleChange}
               value={values.term}
-              className="font-andale mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
+              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
-            <p className="font-andale mt-6 text-sm font-normal leading-[19.6px] text-borderColor">
+            <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               Describe the conditions for this term. In what new ways do we need
               to reimagine your term?
             </p>
@@ -53,9 +53,9 @@ function AddTermForm() {
               name="condition"
               onChange={handleChange}
               value={values.condition}
-              className="font-andale mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2"
+              className="mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
-            <p className="font-andale mt-6 text-sm font-normal leading-[19.6px] text-borderColor">
+            <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               contributor name How would you like to be referred to?
             </p>
             <input
@@ -63,7 +63,7 @@ function AddTermForm() {
               name="contributor"
               onChange={handleChange}
               value={values.contributor}
-              className="font-andale mt-4 w-full border border-solid border-borderColor bg-transparent p-2"
+              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
 
             <div className="mt-6">

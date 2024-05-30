@@ -3,7 +3,7 @@ import Button from './Button'
 
 const DrawTheInternet = () => {
   return (
-    <div className="boder-solid mr-6 mt-6 border">
+    <div className="boder-solid ml-8 mr-6 mt-6 border">
       <div className=" flex justify-center border  border-l-0 border-r-0 border-t-0 border-solid p-[10px]">
         <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
           Draw a map of the internet
@@ -19,7 +19,7 @@ const DrawTheInternet = () => {
         <div className="flex gap-6">
           <button
             disabled
-            className="font-andale leading-[22.4px ] text-base font-normal uppercase text-borderColor"
+            className="leading-[22.4px ] font-andale text-base font-normal uppercase text-borderColor"
           >
             Undo
           </button>

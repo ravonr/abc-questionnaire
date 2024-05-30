@@ -3,7 +3,7 @@ import Icon from './Icon'
 
 const About = () => {
   return (
-    <div className="border border-b-0 border-l-0 border-r-0 border-solid border-borderColor py-6 pr-8">
+    <div className="border border-b-0 border-l-0 border-r-0 border-solid border-borderColor py-6 pl-8 pr-6">
       <h3 className="text-headlineColor text mb-6 max-w-[320px] items-center justify-center leading-none">
         <span className="font-mondwest text-[14px] lg:text-[48px]">B</span>
         <span className="font-editorial text-[12px] lg:text-[39px]">eg</span>

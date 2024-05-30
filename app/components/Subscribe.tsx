@@ -3,7 +3,7 @@ import Paragraph from './Paragraph'
 
 const Subscribe = () => {
   return (
-    <div className="flex border border-l-0 border-r-0 border-solid border-borderColor pb-6 pl-8 pt-6">
+    <div className="flex border border-l-0 border-r-0 border-solid border-borderColor px-8 pb-6 pt-6">
       <h2 className="mr-[41px] max-w-[210px] leading-none">
         <span className="font-mondwest text-[12px] lg:text-[34px]">S</span>
         <span className="font-editorial text-[20px] lg:text-[27px]">ubs</span>

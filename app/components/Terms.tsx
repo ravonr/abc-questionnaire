@@ -13,8 +13,8 @@ const Terms = async () => {
   }
 
   return (
-    <div className="pl-8 ">
-      <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor py-[20px]">
+    <>
+      <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor px-8 py-[20px]">
         <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
           TERM
         </p>
@@ -26,17 +26,17 @@ const Terms = async () => {
         <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
           CONTRIBUTOR
         </p>
-        <p className="font-andale text-right text-xs font-normal leading-[13.5px] text-ink">
+        <p className="text-right font-andale text-xs font-normal leading-[13.5px] text-ink">
           TIMESTAMP
         </p>
       </div>
 
-      <div className="">
+      <div>
         {data?.map((term) => {
           return <Term term={term} key={term.id} />
         })}
       </div>
-    </div>
+    </>
   )
 }
 
