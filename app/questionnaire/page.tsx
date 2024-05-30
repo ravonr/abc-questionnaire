@@ -5,7 +5,7 @@ import Terms from '../components/Terms'
 import AddTermForm from '../components/AddTermForm'
 import DrawTheInternet from '../components/DrawTheInternet'
 
-export default function Home() {
+export default function Questionnaire() {
   return (
     <main className="flex bg-purple py-4 lg:py-8">
       <div className="max-w-[45%] lg:max-w-[33%]">
