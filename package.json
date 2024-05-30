@@ -25,6 +25,8 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "eslint-plugin-prefer-arrow-functions": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "postcss": "^8",
     "postcss-import": "latest",
     "postcss-loader": "latest",
