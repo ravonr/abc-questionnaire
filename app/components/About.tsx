@@ -5,21 +5,27 @@ const About = () => {
   return (
     <div className="border border-b-0 border-l-0 border-r-0 border-solid border-borderColor py-6 pr-8">
       <h3 className="text-headlineColor text mb-6 max-w-[320px] items-center justify-center leading-none">
-        <span className="font-mondwest text-[48px]">B</span>
-        <span className="font-editorial text-[39px]">eg</span>
-        <span className="font-mondwest text-[48px]">in</span>{' '}
-        <span className="font-mondwest text-[48px]">a</span>{' '}
-        <span className="font-editorial text-[39px]">pr</span>
-        <span className="font-mondwest text-[48px]">ac</span>
-        <span className="font-editorial text-[39px]">ti</span>
-        <span className="font-mondwest text-[48px]">ce</span>{' '}
-        <span className="font-editorial text-[39px]">of</span>{' '}
-        <span className="font-mondwest text-[48px]">re</span>
-        <span className="font-editorial text-[39px]">fusal</span>{' '}
-        <span className="font-mondwest text-[48px]">&</span>
-        <span className="font-editorial text-[39px]">r</span>
-        <span className="font-mondwest text-[48px]">ep</span>
-        <span className="font-editorial text-[39px]">air</span>
+        <span className="font-mondwest text-[14px] lg:text-[48px]">B</span>
+        <span className="font-editorial text-[12px] lg:text-[39px]">eg</span>
+        <span className="font-mondwest text-[14px] lg:text-[48px]">
+          in
+        </span>{' '}
+        <span className="font-mondwest text-[14px] lg:text-[48px]">a</span>{' '}
+        <span className="font-editorial text-[12px] lg:text-[39px]">pr</span>
+        <span className="font-mondwest text-[14px] lg:text-[48px]">ac</span>
+        <span className="font-editorial text-[12px] lg:text-[39px]">ti</span>
+        <span className="font-mondwest text-[14px] lg:text-[48px]">
+          ce
+        </span>{' '}
+        <span className="font-editorial text-[12px] lg:text-[39px]">of</span>{' '}
+        <span className="font-mondwest text-[14px] lg:text-[48px]">re</span>
+        <span className="font-editorial text-[12px] lg:text-[39px]">
+          fusal
+        </span>{' '}
+        <span className="font-mondwest text-[14px] lg:text-[48px]">&</span>
+        <span className="font-editorial text-[12px] lg:text-[39px]">r</span>
+        <span className="font-mondwest text-[14px] lg:text-[48px]">ep</span>
+        <span className="font-editorial text-[12px] lg:text-[39px]">air</span>
         <div className="inline-flex">
           <Icon type="pixel-heart" className="ml-2"></Icon>
         </div>

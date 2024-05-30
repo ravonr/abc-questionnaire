@@ -6,15 +6,18 @@ export default function Home() {
       <nav>
         <ul className="flex justify-between lg:justify-end lg:gap-[107px]">
           <li className="text-[12px] font-normal leading-[10px] text-purple">
-            <Link href="/questionnaire">Contribute</Link>
+            <Link className="hover:underline" href="/questionnaire">
+              Contribute
+            </Link>
           </li>
           <li className="text-[12px] font-normal leading-[10px] text-purple">
             <Link
-              href="buttondown.email/newtermsandconditions"
-              passHref
-              legacyBehavior
+              href="https://buttondown.email/newtermsandconditions"
+              passHref={true}
+              target="_blank"
+              className="hover:underline"
             >
-              <a target="_blank">Newsletter</a>
+              Newsletter
             </Link>
           </li>
         </ul>
