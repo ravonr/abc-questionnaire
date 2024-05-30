@@ -1,13 +1,14 @@
 'use client'
 
-import Icon from './Icon'
-import Paragraph from './Paragraph'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { Formik } from 'formik'
+
 import Button from './Button'
 import FiveBars from './FiveBars'
-import { Formik } from 'formik'
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import Icon from './Icon'
+import Paragraph from './Paragraph'
 
-function AddTermForm() {
+const AddTermForm = () => {
   const supabase = createClientComponentClient()
 
   return (
@@ -81,6 +82,6 @@ function AddTermForm() {
       </Formik>
     </div>
   )
-}
+};
 
 export default AddTermForm

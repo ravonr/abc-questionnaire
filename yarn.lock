@@ -1190,6 +1190,11 @@ eslint-plugin-jsx-a11y@^6.7.1:
     object.entries "^1.1.7"
     object.fromentries "^2.0.7"
 
+eslint-plugin-prefer-arrow-functions@^3.1.4:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow-functions/-/eslint-plugin-prefer-arrow-functions-3.3.2.tgz#d6aa254f0fc2338b65c87cd3253ecc6bf2c1feb6"
+  integrity sha512-XRGsga9cK6pZ48IA2PM2PABBlWshRYhkofkQxcWzCM0YlDnal2hrQKsuz0FqtBHimJpgEXGgHUko3KrOayxlOQ==
+
 "eslint-plugin-react-hooks@^4.5.0 || 5.0.0-canary-7118f5dd7-20230705":
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.2.tgz#c829eb06c0e6f484b3fbb85a97e57784f328c596"
@@ -1218,6 +1223,11 @@ eslint-plugin-react@^7.33.2:
     resolve "^2.0.0-next.5"
     semver "^6.3.1"
     string.prototype.matchall "^4.0.10"
+
+eslint-plugin-simple-import-sort@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-7.0.0.tgz#a1dad262f46d2184a90095a60c66fef74727f0f8"
+  integrity sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==
 
 eslint-scope@^7.2.2:
   version "7.2.2"
