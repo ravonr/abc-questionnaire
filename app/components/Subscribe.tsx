@@ -3,16 +3,16 @@ import Paragraph from './Paragraph'
 
 const Subscribe = () => {
   return (
-    <div className="flex border border-l-0 border-r-0 border-solid border-borderColor px-8 pb-6 pt-6">
-      <h2 className="mr-[41px] max-w-[210px] leading-none">
+    <div className="flex flex-col border border-l-0 border-r-0 border-solid border-borderColor px-[10px] py-[12px] lg:flex-row lg:px-8 lg:pb-6 lg:pt-6">
+      <h2 className="mb-2 max-w-[70px] leading-none lg:mb-2 lg:mr-[41px] lg:max-w-[210px]">
         <span className="font-mondwest text-[12px] lg:text-[34px]">S</span>
-        <span className="font-editorial text-[20px] lg:text-[27px]">ubs</span>
+        <span className="font-editorial text-[9px] lg:text-[27px]">ubs</span>
         <span className="font-mondwest text-[12px] lg:text-[34px]">c</span>
-        <span className="font-editorial text-[20px] lg:text-[27px]">rib</span>
+        <span className="font-editorial text-[9px] lg:text-[27px]">rib</span>
         <span className="font-mondwest text-[12px] lg:text-[34px]">e</span>{' '}
-        <span className="font-editorial text-[20px] lg:text-[27px]">t</span>
+        <span className="font-editorial text-[9px] lg:text-[27px]">t</span>
         <span className="font-mondwest text-[12px] lg:text-[34px]">o</span>{' '}
-        <span className="font-editorial text-[20px] lg:text-[27px]">N</span>
+        <span className="font-editorial text-[9px] lg:text-[27px]">N</span>
         <span className="font-mondwest text-[12px] lg:text-[34px]">e</span>
         <span className="font-mondwest text-[12px] lg:text-[34px]">w</span>{' '}
         <span className="font-mondwest text-[12px] lg:text-[34px]">
@@ -24,33 +24,39 @@ const Subscribe = () => {
       </h2>
 
       <div className="w-full">
-        <form
+        {/* <form
           action="https://buttondown.email/api/emails/embed-subscribe/{newtermsandconditions}"
           method="post"
           target="popupwindow"
           className="embeddable-buttondown-form"
         >
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="email" name="email" placeholder="you@example.com" />
           <input type="hidden" value="1" name="embed" />
           <input type="submit" value="Subscribe" />
-          <p>
-            <a href="https://buttondown.email" target="_blank">
-              Powered by Buttondown.
-            </a>
-          </p>
-        </form>
+        </form> */}
         <form className="borer-solid flex justify-between border border-borderColor bg-transparent p-3">
           <input
             type="email"
             name="email"
             id="email"
-            className="w-full border-none bg-transparent font-andale text-base font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor"
+            className="w-full border-none bg-transparent font-andale text-sm font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor lg:text-base"
             placeholder="Your email address"
           />
-          <Button type="submit" disabled={false} text="submit"></Button>
+          <Button
+            className={'hidden lg:block'}
+            type="submit"
+            disabled={false}
+            text="submit"
+          ></Button>
         </form>
-        <p className="mt-4 font-andale text-sm font-normal leading-[16.8px] text-borderColor">
+        <Button
+          className={'mt-2 block lg:hidden'}
+          type="submit"
+          disabled={false}
+          text="submit"
+        ></Button>
+        <p className="mt-2 font-andale text-sm font-normal leading-[16.8px] text-borderColor lg:mt-4">
           a bi-weekly glossary entry, manifesto, and poetic utterance
         </p>
       </div>

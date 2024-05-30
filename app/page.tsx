@@ -22,16 +22,16 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      <h1 className="text-center text-purple lg:text-left">
-        <span className=" font-mondwest text-[60px] lg:text-[80px]">A</span>
-        <span className="font-editorial text-[48px] lg:text-[64px]">B</span>
-        <span className="font-mondwest text-[60px] lg:text-[80px]">C</span>{' '}
-        <span className="font-mondwest text-[60px] lg:text-[80px]">G</span>
-        <span className="font-editorial text-[48px] lg:text-[64px]">lo</span>
-        <span className="font-mondwest text-[60px] lg:text-[80px]">ss</span>
-        <span className="font-editorial text-[48px] lg:text-[64px]">ary</span>
+      <h1 className="mt-4 text-purple lg:mt-0">
+        <span className=" font-mondwest text-[42px] lg:text-[80px]">A</span>
+        <span className="font-editorial text-[34px] lg:text-[64px]">B</span>
+        <span className="font-mondwest text-[42px] lg:text-[80px]">C</span>{' '}
+        <span className="font-mondwest text-[42px] lg:text-[80px]">G</span>
+        <span className="font-editorial text-[34px] lg:text-[64px]">lo</span>
+        <span className="font-mondwest text-[42px] lg:text-[80px]">ss</span>
+        <span className="font-editorial text-[34px] lg:text-[64px]">ary</span>
       </h1>
-      <p className="text-center text-[32px] font-normal italic leading-6 text-purple lg:max-w-[344px] lg:text-left">
+      <p className="text-[32px] font-normal italic leading-none text-purple lg:max-w-[344px]">
         a glossary for an&nbsp;
         <span className="font-bold">a</span>nti-colonial{' '}
         <span className="font-bold">B</span>lack feminist{' '}
