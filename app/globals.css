@@ -25,3 +25,77 @@
 svg {
   display: inline-block;
 }
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 13px;
+  border: 1px solid black;
+  border-radius: 8px;
+  max-width: 128px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/******** Firefox ********/
+input[type='range']::-moz-range-track {
+  background: transparent;
+  height: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  max-width: 128px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 11px;
+  height: 30px;
+  background: #acacef;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: -10px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 11px;
+  height: 30px;
+  background: #acacef;
+  border-radius: 4px;
+  margin-top: -10px;
+  border: 1px solid black;
+}
+
+/***** Focus Styles *****/
+/* Removes default focus */
+input[type='range']:focus {
+  /* outline: none; */
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']:focus::-webkit-slider-thumb {
+  /* border: 1px solid black; */
+  /* outline: 2px solid black; */
+}
+
+/******** Firefox ********/
+input[type='range']:focus::-moz-range-thumb {
+  /* border: 1px solid black; */
+  /* outline: 2px solid black; */
+}
+
+textarea {
+  white-space: normal;
+  text-align: justify;
+}

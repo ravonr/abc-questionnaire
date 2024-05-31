@@ -52,8 +52,7 @@ const AddTermForm = () => {
               Describe the conditions for this term. In what new ways do we need
               to reimagine your term?
             </p>
-            <input
-              type="textarea"
+            <textarea
               name="condition"
               onChange={handleChange}
               value={values.condition}
@@ -82,6 +81,6 @@ const AddTermForm = () => {
       </Formik>
     </div>
   )
-};
+}
 
 export default AddTermForm
