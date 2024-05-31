@@ -1,7 +1,15 @@
+'use client'
+
 import Button from './Button'
-import Paragraph from './Paragraph'
+import { SetStateAction, useState } from 'react'
 
 const DrawTheInternet = () => {
+  const [value, setValue] = useState(50)
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(Number(event.target.value))
+  }
+
   return (
     <div className="boder-solid mx-[10px] mt-4 border lg:ml-8 lg:mr-6 lg:mt-6">
       <div className=" flex justify-center border  border-l-0 border-r-0 border-t-0 border-solid p-[10px]">
@@ -16,8 +24,19 @@ const DrawTheInternet = () => {
       </div>
       <div className="flex flex-col justify-between border border-b-0 border-l-0 border-r-0 border-solid p-[10px] lg:flex-row lg:p-[20px]">
         <div>
-          <input type="range" className="rounded-none" />
-          <p className="text-center">brush size</p>
+          <div className="flex h-[20px] w-[128px] items-center justify-center rounded-lg border border-solid border-ink">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value={value}
+              onChange={handleChange}
+            />
+          </div>
+          <p className="mt-2 text-center font-andale text-[14px] text-ink">
+            Brush size
+          </p>
         </div>
         <div className="mt-4 flex flex-col gap-4 lg:mt-0 lg:flex-row lg:gap-6">
           <button

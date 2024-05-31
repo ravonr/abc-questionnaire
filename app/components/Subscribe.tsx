@@ -23,23 +23,17 @@ const Subscribe = () => {
       </h2>
 
       <div className="w-full">
-        {/* <form
-          action="https://buttondown.email/api/emails/embed-subscribe/{newtermsandconditions}"
+        <form
+          className="borer-solid flex justify-between border border-borderColor bg-transparent p-3"
+          action="https://buttondown.email/api/emails/embed-subscribe/newtermsandconditions"
           method="post"
           target="popupwindow"
-          className="embeddable-buttondown-form"
         >
-          <label htmlFor="email">Email</label>
-          <input className="rounded-none" type="email" name="email" placeholder="you@example.com" />
-          <input type="hidden" value="1" name="embed" />
-          <input type="submit" value="Subscribe" />
-        </form> */}
-        <form className="borer-solid flex justify-between border border-borderColor bg-transparent p-3">
           <input
             type="email"
             name="email"
             id="email"
-            className="w-full rounded-none border-none bg-transparent font-andale text-sm font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor lg:text-base"
+            className="w-full rounded-none border-none bg-transparent font-andale text-sm font-normal leading-[22.4px] text-borderColor placeholder:font-andale placeholder:text-borderColor lg:mr-6 lg:text-base"
             placeholder="Your email address"
           />
           <Button
