@@ -1,9 +1,9 @@
-import About from '../components/About'
-import AddTermForm from '../components/AddTermForm'
-import DrawTheInternet from '../components/DrawTheInternet'
-import Hero from '../components/Hero'
-import Subscribe from '../components/Subscribe'
-import Terms from '../components/Terms'
+import About from '@/app/components/About'
+import AddTermForm from '@/app/components/AddTermForm'
+import DrawTheInternet from '@/app/components/DrawTheInternet'
+import Hero from '@/app/components/Hero'
+import Subscribe from '@/app/components/Subscribe'
+import Terms from '@/app/components/Terms'
 
 const Questionnaire = () => (
   <main className="flex bg-purple py-4 lg:py-8">
