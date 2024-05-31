@@ -2,12 +2,13 @@ interface ButtonProps {
   type: 'submit' | 'reset' | 'button' | undefined
   disabled: boolean
   text: string
+  className?: string
 }
 
-const Button = ({ type, disabled, text }: ButtonProps) => {
+const Button = ({ type, disabled, text, className }: ButtonProps) => {
   return (
     <button
-      className="font-andale bg-borderColor px-4 py-2 text-base font-normal uppercase leading-[22.4px] text-purple"
+      className={`${className} bg-borderColor px-4 py-2 font-andale text-base font-normal uppercase leading-[22.4px] text-purple`}
       type={type}
       disabled={disabled}
     >

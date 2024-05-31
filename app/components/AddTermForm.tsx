@@ -1,25 +1,29 @@
 'use client'
 
-import Icon from './Icon'
-import Paragraph from './Paragraph'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { Formik } from 'formik'
+
 import Button from './Button'
 import FiveBars from './FiveBars'
-import { Formik } from 'formik'
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import Icon from './Icon'
+import Paragraph from './Paragraph'
 
-function AddTermForm() {
+const AddTermForm = () => {
   const supabase = createClientComponentClient()
 
   return (
-    <div className="boder-solid ml-8 mr-6 border px-[10px] pb-6 pt-[10px]">
-      <div className="mb-4 grid grid-cols-3 items-center gap-2">
+    <div className="boder-solid mx-[10px] border px-[10px] pb-6 pt-[10px] lg:ml-8 lg:mr-6">
+      <div className="mb-4 items-center lg:grid lg:grid-cols-3 lg:gap-2">
         <FiveBars />
         <p className="text-center font-andale text-sm font-normal leading-[19.6px] text-borderColor">
           Add new terms & conditions
         </p>
         <FiveBars />
       </div>
-      <Icon type="christmas" />
+      <Icon
+        className="h-[16px] w-[16px] lg:h-auto lg:w-auto"
+        type="christmas"
+      />
       <Formik
         initialValues={{ term: '', condition: '', contributor: '' }}
         onSubmit={async (values, { setSubmitting }) => {
@@ -42,7 +46,7 @@ function AddTermForm() {
               name="term"
               onChange={handleChange}
               value={values.term}
-              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
+              className="mt-4 w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
             <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               Describe the conditions for this term. In what new ways do we need
@@ -53,7 +57,7 @@ function AddTermForm() {
               name="condition"
               onChange={handleChange}
               value={values.condition}
-              className="mt-4 min-h-[229px] w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
+              className="mt-4 min-h-[229px] w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
             <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               contributor name How would you like to be referred to?
@@ -63,7 +67,7 @@ function AddTermForm() {
               name="contributor"
               onChange={handleChange}
               value={values.contributor}
-              className="mt-4 w-full border border-solid border-borderColor bg-transparent p-2 font-andale"
+              className="mt-4 w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
 
             <div className="mt-6">
@@ -78,6 +82,6 @@ function AddTermForm() {
       </Formik>
     </div>
   )
-}
+};
 
 export default AddTermForm

@@ -14,7 +14,7 @@ const Terms = async () => {
 
   return (
     <>
-      <div className="grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor px-8 py-[20px]">
+      <div className="overflwo-scroll grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor bg-purple p-[10px] lg:overflow-auto lg:px-8 lg:py-[20px]">
         <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
           TERM
         </p>

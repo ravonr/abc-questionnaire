@@ -1,5 +1,6 @@
-import type { Metadata } from 'next'
 import localFont from '@next/font/local'
+import type { Metadata } from 'next'
+
 import './globals.css'
 
 const andale = localFont({
@@ -47,18 +48,17 @@ export const metadata: Metadata = {
   description: '',
 }
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable} `}
-      >
-        {children}
-      </body>
-    </html>
-  )
-}
+}>) => (
+  <html lang="en" className="bg-purple">
+    <body
+      className={`${editorial.variable} ${mondwest.variable} ${montreal.variable} ${andale.variable}`}
+    >
+      {children}
+    </body>
+  </html>
+)
+export default RootLayout
