@@ -1,6 +1,8 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
+export const revalidate = 0
 
+import ReadtimeTerms from './ReadtimeTerms'
 import Term from './Term'
 
 const Terms = async () => {
@@ -11,8 +13,17 @@ const Terms = async () => {
     .from('terms')
     .select('*')
     .order('created_at', { ascending: false })
+
   if (error) {
     console.error(error)
+  }
+
+  if (!data) {
+    return (
+      <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
+        no terms found.
+      </p>
+    )
   }
 
   return (
@@ -35,9 +46,7 @@ const Terms = async () => {
       </div>
 
       <div>
-        {data?.map((term) => {
-          return <Term term={term} key={term.id} />
-        })}
+        <ReadtimeTerms serverTerms={data ?? []} />
       </div>
     </>
   )

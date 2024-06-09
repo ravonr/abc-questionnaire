@@ -1,5 +1,3 @@
-import Paragraph from './Paragraph'
-
 interface TermProps {
   term: {
     term: string
