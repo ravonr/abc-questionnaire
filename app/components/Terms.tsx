@@ -7,7 +7,10 @@ const Terms = async () => {
   cookies().getAll()
   const supabase = createServerComponentClient({ cookies })
 
-  const { data, error } = await supabase.from('terms').select('*')
+  const { data, error } = await supabase
+    .from('terms')
+    .select('*')
+    .order('created_at', { ascending: false })
   if (error) {
     console.error(error)
   }

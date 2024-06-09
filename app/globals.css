@@ -99,3 +99,9 @@ textarea {
   white-space: normal;
   text-align: justify;
 }
+
+.homepage-headline {
+  font-size: calc((16 / 1440) * 100vw);
+}
+.homepage-subseadline {
+}
