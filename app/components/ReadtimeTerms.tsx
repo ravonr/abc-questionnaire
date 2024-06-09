@@ -5,16 +5,19 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 import Term from './Term'
 
-interface Term {
-  term: {
-    term: string
-    condition: string
-    contributor: string
-    created_at: string
-  }
+interface TermProps {
+  term: string
+  condition: string
+  contributor: string
+  created_at: string
+  id: number
 }
 
-const ReadtimeTerms = ({ serverTerms }: Term[]) => {
+interface Props {
+  serverTerms: TermProps[]
+}
+
+const ReadtimeTerms = ({ serverTerms }: Props) => {
   const supabase = createClientComponentClient()
   const [terms, setTerms] = useState(serverTerms)
 
@@ -29,7 +32,15 @@ const ReadtimeTerms = ({ serverTerms }: Term[]) => {
           table: 'terms',
         },
         (payload) => {
-          setTerms([payload.new, ...terms])
+          const newTerm = {
+            term: payload.new.term,
+            condition: payload.new.condition,
+            contributor: payload.new.contributor,
+            created_at: payload.new.created_at,
+            id: payload.new.id,
+          }
+
+          setTerms([newTerm, ...terms])
         },
       )
       .subscribe()
