@@ -6,7 +6,6 @@ import { Formik } from 'formik'
 import Button from './Button'
 import FiveBars from './FiveBars'
 import Icon from './Icon'
-import Paragraph from './Paragraph'
 
 const AddTermForm = () => {
   const supabase = createClientComponentClient()

@@ -48,6 +48,9 @@ export const metadata: Metadata = {
   description:
     'A glossary for an anti-colonial Black feminist critical media ecology.',
   metadataBase: new URL('https://abcglossary.xyz'),
+  icons: {
+    icon: `${process.env.NEXT_ENV === 'development' ? 'http://localhost:3000/' : 'https://abcglossary.xyz/'}/favicon-meta-share.png`,
+  },
   alternates: {
     canonical: '/',
     languages: {
@@ -64,14 +67,9 @@ export const metadata: Metadata = {
     siteName: 'ABC Questionnaire',
     images: [
       {
-        url: '',
+        url: `${process.env.NEXT_ENV === 'development' ? 'http://localhost:3000/' : 'https://abcglossary.xyz/'}/favicon-meta-share.png`,
         width: 800,
         height: 600,
-      },
-      {
-        url: '', // Must be an absolute URL
-        width: 1800,
-        height: 1600,
         alt: 'ABC Questionnaire',
       },
     ],
