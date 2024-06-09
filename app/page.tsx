@@ -4,12 +4,12 @@ const Home = () => (
   <main className="min-h-screen bg-ink p-[54px]">
     <nav>
       <ul className="flex justify-between lg:justify-end lg:gap-[107px]">
-        <li className="text-[12px] font-normal leading-[10px] text-purple">
+        <li className="font-montreal text-[24px] font-normal leading-[10px] text-purple">
           <Link className="hover:underline" href="/questionnaire">
             Contribute
           </Link>
         </li>
-        <li className="text-[12px] font-normal leading-[10px] text-purple">
+        <li className="font-monteal text-[24px] font-normal leading-[10px] text-purple">
           <Link
             href="https://buttondown.email/newtermsandconditions"
             passHref={true}
@@ -22,15 +22,15 @@ const Home = () => (
       </ul>
     </nav>
     <h1 className="mt-4 text-purple lg:mt-0">
-      <span className=" font-mondwest text-[42px] lg:text-[80px]">A</span>
-      <span className="font-editorial text-[34px] lg:text-[64px]">B</span>
-      <span className="font-mondwest text-[42px] lg:text-[80px]">C</span>{' '}
-      <span className="font-mondwest text-[42px] lg:text-[80px]">G</span>
-      <span className="font-editorial text-[34px] lg:text-[64px]">lo</span>
-      <span className="font-mondwest text-[42px] lg:text-[80px]">ss</span>
-      <span className="font-editorial text-[34px] lg:text-[64px]">ary</span>
+      <span className=" font-mondwest text-[50px] lg:text-[156px]">A</span>
+      <span className="font-editorial text-[41px] lg:text-[125px]">B</span>
+      <span className="font-mondwest text-[50px] lg:text-[156px]">C</span>{' '}
+      <span className="font-mondwest text-[50px] lg:text-[156px]">G</span>
+      <span className="font-editorial text-[41px] lg:text-[125px]">lo</span>
+      <span className="font-mondwest text-[50px] lg:text-[156px]">ss</span>
+      <span className="font-editorial text-[41px] lg:text-[125px]">ary</span>
     </h1>
-    <p className="text-[32px] font-normal italic leading-none text-purple lg:max-w-[344px]">
+    <p className="font-montreal text-[28px] font-normal italic leading-none text-purple lg:max-w-[650px] lg:text-[64px]">
       a glossary for an&nbsp;
       <span className="font-bold">a</span>nti-colonial{' '}
       <span className="font-bold">B</span>lack feminist{' '}
