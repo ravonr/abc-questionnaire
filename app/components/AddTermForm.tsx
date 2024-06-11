@@ -19,10 +19,7 @@ const AddTermForm = () => {
         </p>
         <FiveBars />
       </div>
-      <Icon
-        className="h-[16px] w-[16px] lg:h-auto lg:w-auto"
-        type="christmas"
-      />
+      <Icon className="h-[16px] w-[16px] lg:h-auto lg:w-auto" type="star" />
       <Formik
         initialValues={{ term: '', condition: '', contributor: '' }}
         onSubmit={async (values, { setSubmitting }) => {

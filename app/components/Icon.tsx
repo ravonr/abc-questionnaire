@@ -264,6 +264,23 @@ const Icon = ({ type, className }: IconProps) => {
       </svg>
     )
   }
+  if (type === 'star') {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 79.69 79.69"
+        width="24"
+        height="24"
+      >
+        <g>
+          <path
+            className="cls-1"
+            d="M70.33,0H9.37v9.37H0v60.96h9.37v9.37h60.96v-9.37h9.37V9.37h-9.37V0ZM11.4,11.22h5.81v-5.81h9.37v5.81h5.81v9.37h-5.81v5.81h-9.37v-5.81h-5.81v-9.37ZM72.47,26.4v27.14h-5.81v6.05h-6.51v3.24H17.86v-8.5h-6.7v-9.37h9.37v8.5h24.56v-5.52h5.7v-7.04h6.51V14.79h-6.51V5.42h9.37v5.81h6.51v15.17h5.81Z"
+          />
+        </g>
+      </svg>
+    )
+  }
 }
 
 export default Icon
