@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="px-[10px] pb-4 font-andale text-sm font-normal leading-[19.6px] text-borderColor lg:px-8 lg:pb-8">
+    <footer className="mt-4 px-[10px] font-andale text-sm font-normal leading-[19.6px] text-borderColor lg:px-8 ">
       web design inspired by{' '}
       <a
         href="https://a-website-is-a-room.net/"

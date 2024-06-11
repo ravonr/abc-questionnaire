@@ -28,7 +28,7 @@ const Terms = async () => {
 
   return (
     <>
-      <div className="overflwo-scroll grid grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor bg-purple p-[10px] lg:overflow-auto lg:px-8 lg:py-[20px]">
+      <div className="overflwo-scroll grid min-w-[600px] grid-cols-5 border border-l-0 border-r-0 border-t-0 border-solid border-borderColor bg-purple p-[10px] lg:min-w-0 lg:overflow-auto lg:px-8 lg:py-[20px]">
         <p className="font-andale text-xs font-normal leading-[13.5px] text-ink">
           TERM
         </p>
@@ -45,7 +45,7 @@ const Terms = async () => {
         </p>
       </div>
 
-      <div>
+      <div className="min-w-[600px] lg:min-w-0">
         <ReadtimeTerms serverTerms={data ?? []} />
       </div>
     </>
