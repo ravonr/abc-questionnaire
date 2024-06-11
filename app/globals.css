@@ -99,3 +99,27 @@ textarea {
   white-space: normal;
   text-align: justify;
 }
+
+html,
+body,
+main {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#left {
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+#right {
+  float: right;
+  width: 67%;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
