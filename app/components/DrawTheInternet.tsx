@@ -8,15 +8,17 @@ import DrawingCanvas from './DrawingCanvas'
 
 const DrawTheInternet = () => {
   const [value, setValue] = useState(2)
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(Number(event.target.value))
-  }
-
+  const supabase = createClientComponentClient()
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const [isDrawing, setIsDrawing] = useState(false)
   const [context, setContext] = useState<CanvasRenderingContext2D | null>(null)
   const [history, setHistory] = useState<ImageData[]>([])
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(Number(event.target.value))
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -75,21 +77,23 @@ const DrawTheInternet = () => {
   }
 
   const saveCanvas = async () => {
+    setLoading(true)
     if (canvasRef.current) {
       const canvas = canvasRef.current
       canvas.toBlob(async (blob) => {
         if (blob) {
           const { data, error } = await supabase.storage
-            .from('your-bucket-name')
+            .from('maps')
             .upload(`drawings/${Date.now()}.png`, blob, {
               contentType: 'image/png',
             })
 
           if (error) {
-            console.error('Error uploading image:', error.message)
+            setMessage(`Error uploading image: ${error.message}`)
           } else {
-            console.log('Image uploaded successfully:', data)
+            setMessage('Image uploaded successfully')
           }
+          setLoading(false)
         }
       })
     }
@@ -133,12 +137,20 @@ const DrawTheInternet = () => {
           >
             Undo
           </button>
-          <Button
-            onClick={saveCanvas}
-            type="submit"
-            disabled={false}
-            text="submit"
-          ></Button>
+          <div className="relative flex flex-col">
+            <Button
+              onClick={saveCanvas}
+              type="submit"
+              disabled={false}
+              text="submit"
+            ></Button>
+            {loading ||
+              (message.length && (
+                <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
+                  loading...
+                </p>
+              ))}
+          </div>
         </div>
       </div>
     </div>
