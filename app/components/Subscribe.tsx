@@ -5,13 +5,13 @@ const Subscribe = () => {
     <div className="flex min-w-[600px] flex-col bg-purple px-[10px] py-[12px] lg:min-w-0 lg:flex-row lg:px-8 lg:pb-6 lg:pt-6">
       <h2 className="mb-2 max-w-[120px] leading-none lg:mb-2 lg:mr-[41px] lg:max-w-[210px]">
         <span className="font-mondwest text-[20px] lg:text-[34px]">S</span>
-        <span className="font-editorial text-[15px] lg:text-[27px]">ubs</span>
+        <span className="font-editorial text-[16px] lg:text-[27px]">ubs</span>
         <span className="font-mondwest text-[20px] lg:text-[34px]">c</span>
-        <span className="font-editorial text-[15px] lg:text-[27px]">rib</span>
+        <span className="font-editorial text-[16px] lg:text-[27px]">rib</span>
         <span className="font-mondwest text-[20px] lg:text-[34px]">e</span>{' '}
-        <span className="font-editorial text-[15px] lg:text-[27px]">t</span>
+        <span className="font-editorial text-[16px] lg:text-[27px]">t</span>
         <span className="font-mondwest text-[20px] lg:text-[34px]">o</span>{' '}
-        <span className="font-editorial text-[15px] lg:text-[27px]">N</span>
+        <span className="font-editorial text-[16px] lg:text-[27px]">N</span>
         <span className="font-mondwest text-[20px] lg:text-[34px]">e</span>
         <span className="font-mondwest text-[20px] lg:text-[34px]">w</span>{' '}
         <span className="font-mondwest text-[20px] lg:text-[34px]">
