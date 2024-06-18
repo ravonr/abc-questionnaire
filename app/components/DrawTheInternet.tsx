@@ -3,6 +3,8 @@
 import { MouseEvent, useEffect, useRef, useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
+import useContainerDimensions from '../hooks/useContainerDimensions'
+
 import Button from './Button'
 import DrawingCanvas from './DrawingCanvas'
 
@@ -99,6 +101,8 @@ const DrawTheInternet = () => {
     }
   }
 
+  const [containerRef, dimensions] = useContainerDimensions()
+
   return (
     <div className="boder-solid mx-[10px] mt-4 border lg:ml-8 lg:mr-6 lg:mt-6">
       <div className=" flex justify-center border  border-l-0 border-r-0 border-t-0 border-solid p-[10px]">
@@ -106,9 +110,14 @@ const DrawTheInternet = () => {
           Draw a map of the internet
         </p>
       </div>
-      <div className="flex min-h-[500px] items-center justify-center">
+      <div
+        className="flex min-h-[500px] items-center justify-center"
+        ref={containerRef}
+      >
         <DrawingCanvas
           canvasRef={canvasRef}
+          height={dimensions.height}
+          width={dimensions.width}
           startDrawing={startDrawing}
           draw={draw}
           stopDrawing={stopDrawing}
@@ -116,7 +125,7 @@ const DrawTheInternet = () => {
       </div>
       <div className="flex flex-col justify-between border border-b-0 border-l-0 border-r-0 border-solid p-[10px] lg:flex-row lg:p-[20px]">
         <div>
-          <div className="flex h-[20px] w-[128px] items-center justify-center rounded-lg border border-solid border-ink">
+          <div className="flex h-[20px] items-center justify-center rounded-lg border-solid border-ink lg:w-[128px] lg:border">
             <input
               type="range"
               min="2"
@@ -145,7 +154,7 @@ const DrawTheInternet = () => {
               text="submit"
             ></Button>
             {loading ||
-              (message.length && (
+              (message.length > 0 && (
                 <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
                   loading...
                 </p>

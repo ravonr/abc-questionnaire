@@ -6,6 +6,8 @@ interface DrawingCanvasProps {
   startDrawing: (e: MouseEvent<HTMLCanvasElement>) => void
   draw: (e: MouseEvent<HTMLCanvasElement>) => void
   stopDrawing: () => void
+  height: number
+  width: number
 }
 
 const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
@@ -13,18 +15,18 @@ const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
   startDrawing,
   draw,
   stopDrawing,
+  height,
+  width,
 }) => {
   return (
     <canvas
       ref={canvasRef}
-      height={500}
-      width={500}
-      style={{ border: '1px solid black' }}
+      height={height}
+      width={width}
       onMouseDown={startDrawing}
       onMouseMove={draw}
       onMouseUp={stopDrawing}
       onMouseLeave={stopDrawing}
-      className="my-4"
     />
   )
 }
