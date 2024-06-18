@@ -9,22 +9,22 @@ const Hero = () => {
           type="pixel"
         ></Icon>
         <h1 className="mb-1 break-all leading-none text-headlineColor lg:mb-0">
-          <span className="font-mondwest text-[24px] lg:text-[80px]">A</span>
-          <span className="font-editorial text-[19px] lg:text-[64px]">B</span>
-          <span className="font-mondwest text-[24px] lg:text-[80px]">
+          <span className="font-mondwest text-[20px] lg:text-[80px]">A</span>
+          <span className="font-editorial text-[16px] lg:text-[64px]">B</span>
+          <span className="font-mondwest text-[20px] lg:text-[80px]">
             C
           </span>{' '}
-          <span className="font-mondwest text-[24px] lg:text-[80px]">G</span>
-          <span className="font-editorial text-[19px] lg:text-[64px]">lo</span>
-          <span className="font-mondwest text-[24px] lg:text-[80px]">ss</span>
-          <span className="font-editorial text-[19px] lg:text-[64px]">ary</span>
+          <span className="font-mondwest text-[20px] lg:text-[80px]">G</span>
+          <span className="font-editorial text-[16px] lg:text-[64px]">lo</span>
+          <span className="font-mondwest text-[20px] lg:text-[80px]">ss</span>
+          <span className="font-editorial text-[16px] lg:text-[64px]">ary</span>
         </h1>
       </div>
       <h2 className="mb-[10px] leading-[0.5] text-headlineColor lg:mb-6">
-        <span className="font-mondwest text-[24px] lg:text-[80px]">Q</span>
-        <span className="font-editorial text-[19px] lg:text-[64px]">uesti</span>
-        <span className="font-mondwest text-[24px] lg:text-[80px]">onn</span>
-        <span className="font-editorial text-[19px] lg:text-[64px]">aire</span>
+        <span className="font-mondwest text-[20px] lg:text-[80px]">Q</span>
+        <span className="font-editorial text-[16px] lg:text-[64px]">uesti</span>
+        <span className="font-mondwest text-[20px] lg:text-[80px]">onn</span>
+        <span className="font-editorial text-[16px] lg:text-[64px]">aire</span>
       </h2>
       <p className="font-montreal text-sm font-normal leading-[18.2px] text-ink">
         Use these exercises to revisit your relationship to the internet and the
