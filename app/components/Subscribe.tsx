@@ -29,6 +29,9 @@ const Subscribe = () => {
           method="post"
           target="popupwindow"
         >
+          <label htmlFor="email" className="sr-only">
+            Email address
+          </label>
           <input
             type="email"
             name="email"

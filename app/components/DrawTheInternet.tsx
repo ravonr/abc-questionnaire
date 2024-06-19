@@ -130,14 +130,18 @@ const DrawTheInternet = () => {
               type="range"
               min="2"
               max="25"
+              id="bush-size"
               step="1"
               value={value}
               onChange={handleChange}
             />
           </div>
-          <p className="mt-2 text-center font-andale text-[14px] text-ink">
+          <label
+            htmlFor="bush-size"
+            className="mt-2 text-center font-andale text-[14px] text-ink"
+          >
             Brush size
-          </p>
+          </label>
         </div>
         <div className="mt-4 flex flex-col gap-4 lg:mt-0 lg:flex-row lg:gap-6">
           <button

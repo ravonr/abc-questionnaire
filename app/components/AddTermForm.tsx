@@ -38,31 +38,44 @@ const AddTermForm = () => {
             <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
               what’s your term?
             </p>
-            <p className="font-andale text-sm font-normal leading-[19.6px] text-borderColor">
+            <label
+              htmlFor="term-input"
+              className="font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+            >
               What words do we currently use to relate to community, technology,
               and nature? What words do we ignore?
-            </p>
+            </label>
+
             <input
               type="text"
               name="term"
+              id="term-input"
               onChange={handleChange}
               value={values.term}
               className="mt-4 w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
-            <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
+            <label
+              htmlFor="term-conditions"
+              className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+            >
               Describe the conditions for this term. In what new ways do we need
               to reimagine your term?
-            </p>
+            </label>
             <textarea
+              id="term-conditions"
               name="condition"
               onChange={handleChange}
               value={values.condition}
               className="mt-4 min-h-[229px] w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
-            <p className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor">
+            <label
+              htmlFor="contributor-input"
+              className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+            >
               contributor name How would you like to be referred to?
-            </p>
+            </label>
             <input
+              id="contributor-input"
               type="text"
               name="contributor"
               onChange={handleChange}
