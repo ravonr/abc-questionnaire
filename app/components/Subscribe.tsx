@@ -2,7 +2,7 @@ import Button from './Button'
 
 const Subscribe = () => {
   return (
-    <div className="flex min-w-[600px] flex-col bg-purple px-[10px] py-[12px] lg:min-w-0 lg:flex-row lg:px-8 lg:pb-6 lg:pt-6">
+    <div className="flex min-w-[600px] flex-col bg-purple px-[10px] pb-[12px] pt-[18px] lg:min-w-0 lg:flex-row lg:px-8 lg:pb-6 lg:pt-[28px]">
       <h2 className="mb-2 max-w-[120px] leading-none lg:mb-2 lg:mr-[41px] lg:max-w-[210px]">
         <span className="font-mondwest text-[20px] lg:text-[34px]">S</span>
         <span className="font-editorial text-[16px] lg:text-[27px]">ubs</span>

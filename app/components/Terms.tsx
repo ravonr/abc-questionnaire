@@ -3,7 +3,6 @@ import { cookies } from 'next/headers'
 export const revalidate = 0
 
 import ReadtimeTerms from './ReadtimeTerms'
-import Term from './Term'
 
 const Terms = async () => {
   cookies().getAll()

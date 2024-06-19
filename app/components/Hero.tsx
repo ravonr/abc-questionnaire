@@ -2,7 +2,7 @@ import Icon from './Icon'
 
 const Hero = () => {
   return (
-    <div className="py-[12px] pb-4 pl-[10px] pr-[4px] lg:py-6 lg:pl-8 lg:pr-6">
+    <div className="pb-[12px] pl-[10px] pr-[4px] lg:pb-6 lg:pl-8 lg:pr-6">
       <div className="flex items-center">
         <Icon
           className="lg: mr-1 h-[10px] w-[10px] lg:mr-3 lg:h-auto lg:w-auto"
