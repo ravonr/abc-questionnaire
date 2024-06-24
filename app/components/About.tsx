@@ -37,7 +37,7 @@ const About = () => {
       <ul>
         <AboutListItem
           icon="pen"
-          text="Draw a diagram. illustrate how you are connected to the internet— are you wireless by way of wifi or hardwired by way of an ethernet cord? who else is connected to the same source?"
+          text="Draw a diagram. illustrate how you are connected to the internet— are you wireless by way of wifi or hardwired by way of an ethernet cord? who else is connected to the same source???"
         />
 
         <AboutListItem
