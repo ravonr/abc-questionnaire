@@ -30,7 +30,7 @@ const Hero = () => {
         Use these exercises to revisit your relationship to the internet and the
         web through language. What words do we use? What words do we ignore?
         What words do we need to use in new ways? Afterwards submit your
-        reimagined term and its new definition.
+        reimagined term and its new definition. New Changes here
       </p>
       <br />
       <p className="font-montreal text-sm leading-[18.2px] text-ink">
