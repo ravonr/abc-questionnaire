@@ -28,6 +28,11 @@ svg {
   height: 100%;
 }
 
+.add-term-form svg {
+  width: auto;
+  height: auto;
+}
+
 input[type='range'] {
   -webkit-appearance: none;
   appearance: none;

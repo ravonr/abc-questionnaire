@@ -12,7 +12,7 @@ const AddTermForm = () => {
   const [message, setMessage] = useState('')
 
   return (
-    <div className="boder-solid mx-[10px] border px-[10px] pb-6 pt-[10px] lg:ml-8 lg:mr-6">
+    <div className="add-term-form boder-solid mx-[10px] border px-[10px] pb-6 pt-[10px] lg:ml-8 lg:mr-6">
       <div className="mb-4 items-center lg:grid lg:grid-cols-3 lg:gap-2">
         <FiveBars />
         <p className="text-center font-andale text-sm font-normal leading-[19.6px] text-borderColor">
@@ -20,7 +20,10 @@ const AddTermForm = () => {
         </p>
         <FiveBars />
       </div>
-      <Icon className="h-[16px] w-[16px] lg:h-auto lg:w-auto" type="star" />
+      <Icon
+        className=" mb-2 h-[16px] w-[16px] lg:h-auto lg:w-auto"
+        type="star"
+      />
       <Formik
         initialValues={{ term: '', condition: '', contributor: '' }}
         onSubmit={async (values, { setSubmitting }) => {
