@@ -29,7 +29,7 @@ const Hero = () => {
       <p className="font-montreal text-sm font-normal leading-[18.2px] text-ink">
         Welcome to the ABC Glossary* Questionnaire, an invitation to revisit
         your relationship to the internet and to reimagine how we collectively
-        web through language.
+        web through language. New sentence here.
       </p>
       <br />
       <p className="font-montreal text-sm leading-[18.2px] text-ink">
