@@ -27,6 +27,7 @@ const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
       onMouseMove={draw}
       onMouseUp={stopDrawing}
       onMouseLeave={stopDrawing}
+      className="hidden lg:block"
     />
   )
 }

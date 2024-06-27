@@ -37,32 +37,38 @@ const About = () => {
       <ul>
         <AboutListItem
           icon="pen"
-          text="Draw a diagram. illustrate how you are connected to the internet— are you wireless by way of wifi or hardwired by way of an ethernet cord? who else is connected to the same source???"
+          boldText="Map your local area network (LAN). "
+          text="We are all part of a local area network (A local area network (LAN) is a collection of devices (e.g. your cell phone, laptop, desktop, printer) connected together in one physical location (e.g. in a building, office, or your home). A LAN is made up of cables, access points, switches, routers, and other components that enable devices to connect to internal servers, web servers, and other LANs via wide area networks.). Who are you connected with and how? Are you wireless by way of wifi or hardwired by way of an ethernet cord?"
         />
 
         <AboutListItem
           icon="christmas"
-          text="Locate the internet in your community. go outside"
+          boldText="Locate your server."
+          text="We’re all archiving our data on a server. Where are you storing your memory? Look up the server for your personal website or for your photos on your phone. "
         />
 
         <AboutListItem
           icon="butterfly"
-          text="our world is made up of clouds, bugs, gardens, and farms. how are you tending to them online? how are you tending to them offline?"
+          boldText="Go for an internet walk."
+          text="Where can you see the internet in your neighborhood or local area (e.g. cables, symbols)? what kind of infrastructure do you want to hold your community? if your community was an internet garden, what do you imagine it would look like?"
         />
 
         <AboutListItem
           icon="cloud"
-          text="Imagine.knowing that the internet is cables traveling across the see floor and across the sky what does the internet look like"
+          boldText="Study your network."
+          text="Our world is made up of (data) clouds, (software) bugs, (internet) gardens, and (server) farms. how are you tending to them online? how are you tending to them offline? What is the status of your connection?"
         />
 
         <AboutListItem
           icon="web"
-          text="how do you want to web together, inclusive of our bodies and the land that lives with data? what is the status of your connection?"
+          boldText="Create a short manifesto."
+          text="Develop a vision, guiding principles, and values for an anti-colonial Black feminist critical media ecology, a liberatory vision for our current and future of technology and cyber experience. How do you want to web together? How is your vision inclusive of our bodies and the land that resources our connections and lives with our data?"
         />
 
         <AboutListItem
           icon="book"
-          text="Collect found words or phrases that you use to think or talk about the internet, the web, and technology. are there new terms and conditions you can dream of. what are the ways you want to be connected to technology, your community, and/or the natural world around you? what are the conditions that will help us create this world together?"
+          boldText="Imagine new “terms & conditions”."
+          text="With each device, website, and application you agree to a set of terms & conditions predetermined by someone else for how you connect. Collect words or phrases that you use to think or talk about the internet, the web, and technology. Are there new terms and conditions for these terms you can dream of? What are the ways you want to be connected to technology, your community, and/or the natural world around you? What are the conditions that will help us create this world together? "
         />
       </ul>
     </div>

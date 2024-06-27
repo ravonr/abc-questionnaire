@@ -96,6 +96,9 @@ const DrawTheInternet = () => {
             setMessage('Image uploaded successfully')
           }
           setLoading(false)
+          setMessage('')
+
+          console.log(Boolean(loading || message.length))
         }
       })
     }
@@ -122,6 +125,10 @@ const DrawTheInternet = () => {
           draw={draw}
           stopDrawing={stopDrawing}
         />
+        <p className="block text-center font-andale text-sm font-normal leading-[19.6px] text-borderColor lg:hidden">
+          Currently not available on mobile. Please use a desktop browser to
+          draw.{' '}
+        </p>
       </div>
       <div className="flex flex-col justify-between border border-b-0 border-l-0 border-r-0 border-solid p-[10px] lg:flex-row lg:p-[20px]">
         <div>
@@ -157,12 +164,11 @@ const DrawTheInternet = () => {
               disabled={false}
               text="submit"
             ></Button>
-            {loading ||
-              (message.length > 0 && (
-                <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
-                  loading...
-                </p>
-              ))}
+            {Boolean(loading || message.length) && (
+              <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
+                loading...
+              </p>
+            )}
           </div>
         </div>
       </div>
