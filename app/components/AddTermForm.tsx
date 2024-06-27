@@ -29,7 +29,6 @@ const AddTermForm = () => {
             return
           }
           const { error } = await supabase.from('terms').insert(values)
-
           setSubmitting(false)
         }}
       >

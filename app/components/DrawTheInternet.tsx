@@ -96,6 +96,9 @@ const DrawTheInternet = () => {
             setMessage('Image uploaded successfully')
           }
           setLoading(false)
+          setMessage('')
+
+          console.log(Boolean(loading || message.length))
         }
       })
     }
@@ -161,12 +164,11 @@ const DrawTheInternet = () => {
               disabled={false}
               text="submit"
             ></Button>
-            {loading ||
-              (message.length > 0 && (
-                <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
-                  loading...
-                </p>
-              ))}
+            {Boolean(loading || message.length) && (
+              <p className="absolute top-full mt-[-8px] font-andale text-[14px] text-ink">
+                loading...
+              </p>
+            )}
           </div>
         </div>
       </div>
