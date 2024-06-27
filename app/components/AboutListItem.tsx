@@ -4,9 +4,10 @@ import Paragraph from './Paragraph'
 interface AboutListItemProps {
   icon: string
   text: string
+  boldText?: string
 }
 
-const AboutListItem = ({ icon, text }: AboutListItemProps) => {
+const AboutListItem = ({ icon, text, boldText }: AboutListItemProps) => {
   return (
     <li className="my-4 flex">
       <div className="mr-[10px] lg:mr-6">
@@ -15,7 +16,10 @@ const AboutListItem = ({ icon, text }: AboutListItemProps) => {
           type={icon}
         ></Icon>
       </div>
-      <p className="font-montreal text-sm font-normal text-ink">{text}</p>
+      <p className="font-montreal text-sm text-ink">
+        <span className="font-black">{boldText}</span>{' '}
+        <span className="font-normal">{text}</span>
+      </p>
     </li>
   )
 }
