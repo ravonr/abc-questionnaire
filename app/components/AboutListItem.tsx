@@ -8,7 +8,7 @@ interface AboutListItemProps {
 
 const AboutListItem = ({ icon, text }: AboutListItemProps) => {
   return (
-    <li className="flex">
+    <li className="my-4 flex">
       <div className="mr-[10px] lg:mr-6">
         <Icon
           className="h-[16px] w-[16px] lg:h-auto lg:w-auto"
