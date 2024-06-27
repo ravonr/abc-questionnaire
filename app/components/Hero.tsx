@@ -27,18 +27,34 @@ const Hero = () => {
         <span className="font-editorial text-[16px] lg:text-[64px]">aire</span>
       </h2>
       <p className="font-montreal text-sm font-normal leading-[18.2px] text-ink">
-        Use these exercises to revisit your relationship to the internet and the
-        web through language. What words do we use? What words do we ignore?
-        What words do we need to use in new ways? Afterwards submit your
-        reimagined term and its new definition.
+        Welcome to the ABC Glossary* Questionnaire, an invitation to revisit
+        your relationship to the internet and to reimagine how we collectively
+        web through language.
       </p>
       <br />
       <p className="font-montreal text-sm leading-[18.2px] text-ink">
-        This questionnaire is part of a framework and glossary for an
-        anti-colonial Black feminist critical media ecology, or abc glossary for
-        short, a growing reimagining of computing-related terminology from
-        hardware to software beyond the conditions of e-colonialism — toward
-        abundant relationship between humans, technology, and nature.
+        Below are a set of exercises to help you locate yourself within a (local
+        area) network in order to refuse harmful computing practices and to
+        repair our connections with/between technology, community, and nature.
+      </p>
+      <br />
+      <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
+        What words do we use to describe our electronic experiences?
+      </p>
+      <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
+        What terms do you associate with the internet, computing, and cyber
+        culture?
+      </p>
+      <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
+        What words do we ignore?
+      </p>
+      <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
+        What words do we need to use in new ways?
+      </p>
+      <br />
+      <p className="font-montreal text-sm font-normal leading-[18.2px] text-ink">
+        Submit a term with a newly redefined condition.* Draw an imagined map of
+        the internet.
       </p>
     </div>
   )

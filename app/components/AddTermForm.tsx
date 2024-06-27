@@ -16,7 +16,7 @@ const AddTermForm = () => {
       <div className="mb-4 items-center lg:grid lg:grid-cols-3 lg:gap-2">
         <FiveBars />
         <p className="text-center font-andale text-sm font-normal leading-[19.6px] text-borderColor">
-          Add new terms & conditions
+          Submission form
         </p>
         <FiveBars />
       </div>
@@ -40,10 +40,11 @@ const AddTermForm = () => {
             </p>
             <label
               htmlFor="term-input"
-              className="font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+              className="font-andale text-sm font-normal italic leading-[19.6px] text-borderColor"
             >
-              What words do we currently use to relate to community, technology,
-              and nature? What words do we ignore?
+              What terms do you associate with the internet, computing, and
+              cyber culture? What words do we ignore? What words do we need to
+              use in new ways?
             </label>
 
             <input
@@ -54,12 +55,16 @@ const AddTermForm = () => {
               value={values.term}
               className="mt-4 w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
+            <p className="font-andale text-sm font-normal  leading-[19.6px] text-borderColor">
+              what do you imagine is the condition of this term?
+            </p>
             <label
               htmlFor="term-conditions"
-              className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+              className="mt-6 font-andale text-sm font-normal italic leading-[19.6px] text-borderColor"
             >
-              Describe the conditions for this term. In what new ways do we need
-              to reimagine your term?
+              How do you want to reimagine this term? In what ways could the
+              conditions of this term help us toward more liberatory,
+              sustainable, and communal futures?{' '}
             </label>
             <textarea
               id="term-conditions"
@@ -68,11 +73,14 @@ const AddTermForm = () => {
               value={values.condition}
               className="mt-4 min-h-[229px] w-full rounded-none border border-solid border-borderColor bg-transparent p-2 font-andale"
             />
+            <p className="font-andale text-sm font-normal  leading-[19.6px] text-borderColor">
+              Contributor Name
+            </p>
             <label
               htmlFor="contributor-input"
-              className="mt-6 font-andale text-sm font-normal leading-[19.6px] text-borderColor"
+              className="mt-6 font-andale text-sm font-normal italic leading-[19.6px] text-borderColor"
             >
-              contributor name How would you like to be referred to?
+              How would you like to be referred to as?
             </label>
             <input
               id="contributor-input"
