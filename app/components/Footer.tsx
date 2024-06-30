@@ -15,15 +15,11 @@ const Footer = () => {
       </p>
       <br />
       <p>
-        site inspired by 
-        <a
+        site inspired by <a
           href="https://a-website-is-a-room.net/"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-2	"
-        >
-          a website is a room
-        </a>
+          className="underline underline-offset-2	">a website is a room</a>
         . web design by{' '}
         <a
           href="https://studiotibby.com/"
