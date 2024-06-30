@@ -29,7 +29,7 @@ const Footer = () => {
         >
           studio tibby
         </a>
-        . web development by{' '}
+        . hand coded by{' '}
         <a
           href="https://danhemerlein.com/"
           target="_blank"
