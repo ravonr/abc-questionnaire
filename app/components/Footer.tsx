@@ -15,8 +15,7 @@ const Footer = () => {
       </p>
       <br />
       <p>
-        site inspired by 
-        <a href="https://a-website-is-a-room.net/"
+        site inspired by <a href="https://a-website-is-a-room.net/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline underline-offset-2">a website is a room</a> and <a href="https://chimeric-worlding.netlify.app/" 
