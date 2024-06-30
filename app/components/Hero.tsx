@@ -39,17 +39,17 @@ const Hero = () => {
       </p>
       <br />
       <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
-        What words do we use to describe our electronic experiences?
+        <em>What words do we use to describe our electronic experiences?</em>
       </p>
       <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
-        What terms do you associate with the internet, computing, and cyber
-        culture?
+        <em>What terms do you associate with the internet, computing, and cyber
+        culture?</em>
       </p>
       <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
-        What words do we ignore?
+        <em>What words do we ignore?</em>
       </p>
       <p className="font-montreal text-sm italic leading-[18.2px] text-ink">
-        What words do we need to use in new ways?
+        <em>What words do we need to use in new ways?</em>
       </p>
       <br />
       <p className="font-montreal text-sm font-normal leading-[18.2px] text-ink">
